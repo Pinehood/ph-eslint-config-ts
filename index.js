@@ -1,8 +1,13 @@
 module.exports = {
   globals: {},
+  root: true,
+  env: {
+    node: true,
+    jest: true,
+  },
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "tsconfig2.json",
+    project: "tsconfig.json",
     sourceType: "module",
     ecmaVersion: "latest",
   },
@@ -12,10 +17,5 @@ module.exports = {
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "off",
-  },
-  root: true,
-  env: {
-    node: true,
-    jest: true,
   },
 };
