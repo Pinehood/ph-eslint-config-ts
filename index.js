@@ -1,5 +1,4 @@
 module.exports = {
-  globals: {},
   root: true,
   env: {
     node: true,
@@ -12,6 +11,15 @@ module.exports = {
     ecmaVersion: "latest",
   },
   plugins: ["@typescript-eslint/eslint-plugin"],
+  ignorePatterns: [
+    ".github",
+    ".husky",
+    ".vscode",
+    "coverage",
+    "dist",
+    "node_modules",
+    "public",
+  ],
   rules: {
     "@typescript-eslint/interface-name-prefix": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
